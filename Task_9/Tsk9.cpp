@@ -2,7 +2,7 @@
 #include <array>
 using namespace std;
 
-int find_i(array<int, 10> arr){
+int find(array<int, 10> arr){
     int n;
     cout << "Enter n:";
     cin >> n;
@@ -22,12 +22,12 @@ int find_i(array<int, 10> arr){
 }
 
 int main(){
-    array<int, 10> arr;
-    for (int i = 0; i < arr.size(); i++){
+    array<int, 10> my_arr;
+    for (int i = 0; i < my_arr.size(); i++){
         cout << "Enter: ";
-        cin >> arr[i];
+        cin >> my_arr[i];
     }
-    int s = find_i(arr);
+    int s = find(my_arr);
     if (s == -1){
         cout << "Error";
     }
