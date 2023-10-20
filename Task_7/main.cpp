@@ -6,6 +6,7 @@ void see_arr(array<int, 5> arr){
     for (int j = 0; j < arr.size(); j++){
         cout  << arr[j] << " ";
     }
+    cout << endl;
 }
 
 void add_el(array<int, 5> &arr){
