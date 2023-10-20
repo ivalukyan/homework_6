@@ -2,29 +2,27 @@
 #include <array>
 using namespace std;
 
-typedef array<array<int, 2>, 2> matrix;
 
-void add_arr(matrix& arr){
-    for (int i = 0; i < arr.size(); i++){
-        for (int j = 0; j < arr.size(); j++){
-            cin >> arr[i][j];
+void add_arr(array<array<int, 2>, 2> &matrix){
+    for (int i = 0; i < 2; i++){
+        for (int j = 0; j < 2; j++){
+            cin >> matrix[i][j];
         }
     }
 }
 
-void see_arr(const matrix& arr){
-    for (int k = 0; k < arr.size(); k++){
-        for (int g = 0; g < arr.size(); g++){
-            cout << arr[k][g] << " ";
+void see_arr(const array<array<int, 2>, 2> &matrix){
+    for (int k = 0; k < 2; k++){
+        for (int g = 0; g < 2; g++){
+            cout << matrix[k][g] << " ";
         }
-        cout << "\n";
+        cout << endl;
     }
 }
 
 int main(){
     
-    matrix arr;
-    add_arr(arr);
-    cout << "\n";
-    see_arr(arr);
+    array<array<int, 2>, 2> matrix;
+    add_arr(matrix);
+    see_arr(matrix);
 }
